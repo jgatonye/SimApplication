@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1029502469832",
+    "firebase_url": "https://simsimi-application.firebaseio.com",
+    "project_id": "simsimi-application",
+    "storage_bucket": "simsimi-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029502469832:android:45ebbf5649196aae",
+        "android_client_info": {
+          "package_name": "com.example.john.simapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029502469832-iidgiq75akadpkedt1jfuog6jrp6tc3f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.john.simapplication",
+            "certificate_hash": "19c90a6fe93fc946034f4f601dbdd25ab4be6e49"
+          }
+        },
+        {
+          "client_id": "1029502469832-03j3lf3ovkd0glbljk35up6f56v973oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBupN4jO6Duahl7LYktzxiAgZndn5wtMjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029502469832-03j3lf3ovkd0glbljk35up6f56v973oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
