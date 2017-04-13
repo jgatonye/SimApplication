@@ -6,4 +6,10 @@
         android:title="Logout"
         android:visible="true"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        android:visible="true"
+        app:showAsAction="never" />
 </menu>

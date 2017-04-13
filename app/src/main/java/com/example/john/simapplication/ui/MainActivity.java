@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected String doInBackground(List<ChatModel>... params) {
-            String url = String.format("http://sandbox.api.simsimi.com/request.p?key=%s&lc=en&ft=1.0$text=%s",getString(R.string.simsimi_api),text);
+            String url = String.format("http://sandbox.api.simsimi.com/request.p?key=%s&lc=een&ft=1.0&text=&s", getString(R.string.simsimi_api), text);
             models = params[0];
 
             //get result from api
@@ -121,6 +121,11 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.about){
+            aboutSimsim();
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -128,6 +133,15 @@ public class MainActivity extends AppCompatActivity {
     private void logout(){
         FirebaseAuth.getInstance().signOut();
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+    }
+
+    //About Activity method
+    private void aboutSimsim(){
+
+        Intent intent = new Intent(MainActivity.this, AboutActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();

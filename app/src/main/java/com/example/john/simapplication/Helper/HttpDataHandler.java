@@ -13,6 +13,7 @@ import java.net.URL;
  * Created by john on 4/9/17.
  */
 
+
 public class HttpDataHandler {
 
     static String stream = null;
